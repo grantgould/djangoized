@@ -1,16 +1,9 @@
 # Generate Django Project if None Exist
-if test -f "manage.py"; then
-    django-admin startapp core
+FILE=manage.py
+if [ -f "$FILE" ]
+then
+    source server.sh
+else 
+    django-admin startproject .
+    source server.sh
 fi
-
-# Make Nessary Migrations
-python manage.py makemigrations
-
-# Migrate Database 
-python manage.py migrate
-
-# Uncomment this line below when needing to add fixtures
-# python manage.py loaddata fixtures/data.json
-
-# Run the Server
-python manage.py runserver 0.0.0.0:8000
