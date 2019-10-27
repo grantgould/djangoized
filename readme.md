@@ -39,9 +39,8 @@ docker-compose up
 - Rename directory /djangoized directory to your project name.
 - Rename /docker-compose.yml main image to your project name.
 - Rename directory /core to project name.
-- - Update /manage.py DJANGO_SETTINGS_MODULE string to project name. 
-- - Update project's settings.py, urls.py, and views.py DJANGO_SETTINGS_MODULE string to project name.
-- 
+  - Update /manage.py DJANGO_SETTINGS_MODULE string to project name. 
+  - Update project's settings.py, urls.py, and views.py DJANGO_SETTINGS_MODULE string to project name.
 
 ## Philosophy 
 - /core (Django project)
