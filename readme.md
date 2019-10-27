@@ -6,13 +6,13 @@ Batteries Included:
 - Docker
 
 ## Step 1: Build
-Run ```bash
+```bash
 git clone https://github.com/grantgould/djangoized
 cd djangoized && docker-compose up
 ```
 
 ## Step 2: Postgres Integration
-Run ```bash
+```bash
 docker-compose down
 ```
 - Delete SQLite Database (db.sqlite3)
@@ -28,7 +28,7 @@ DATABASES = {
     }
 }
 ```
-Then run ```bash
+```bash
 docker-compose up
 ```
 
@@ -49,3 +49,6 @@ docker-compose up
 - /fixtures (Load Database Data on Container Startup)
 - /entry.sh (Create Django Project)
 - /server.sh (Run Django Server)
+
+## Changelog
+- v0.0.1 Inital Version
