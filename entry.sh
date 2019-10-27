@@ -4,6 +4,6 @@ if [ -f "$FILE" ]
 then
     source server.sh
 else 
-    django-admin startproject .
+    django-admin startproject core .
     source server.sh
 fi

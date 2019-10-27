@@ -5,8 +5,8 @@ services:
     image: postgres
   redis:
     image: redis
-  messenger:
-    image: messenger
+  django:
+    image: django
     build: .
     command: sh entry.sh
     volumes:
