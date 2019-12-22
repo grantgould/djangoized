@@ -1,4 +1,4 @@
-# Make Nessary Migrations
+# Make Necessary Migrations
 python manage.py makemigrations
 
 # Migrate Database 
