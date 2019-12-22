@@ -5,6 +5,9 @@ Batteries Included:
 - Redis
 - Docker
 
+## Requirements
+- [Docker](https://www.docker.com)
+
 ## Step 1: Build
 ```bash
 git clone https://github.com/grantgould/djangoized
@@ -50,4 +53,6 @@ docker-compose up
 - /server.sh (Run Django Server)
 
 ## Changelog
-- v0.0.1 Inital Version
+- v0.0.2 Danger Noodle Version
+  - Added Settings.sh File to Quickly Change Django Project Name
+- v0.0.1 Inital Versions
