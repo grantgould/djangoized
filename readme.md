@@ -26,6 +26,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
         'USER': 'postgres',
+        'PASSWORD': 'postgres',
         'HOST': 'db',
         'PORT': 5432,
     }
@@ -45,6 +46,27 @@ docker-compose up
   - Update /manage.py DJANGO_SETTINGS_MODULE string to project name. 
   - Update project's settings.py, urls.py, and views.py DJANGO_SETTINGS_MODULE string to project name.
 
+## (Optional) Step 5: Update Postgres Password Environment Variable
+Update docker-compose.yml file.
+```yaml
+...
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: YOUR_PASSWORD
+...
+```
+
+``` python
+DATABASES = {
+    'default': {
+      ...
+        'PASSWORD': 'YOUR_PASSWORD',
+      ...
+    }
+}
+```
+
 ## Philosophy 
 - /core (Django project)
 - /apps (Django startapps directory)
@@ -53,6 +75,8 @@ docker-compose up
 - /server.sh (Run Django Server)
 
 ## Changelog
+- v0.0.3 Lovely Spam Version
+  - Postgres Database Requires Password Environment Variable
 - v0.0.2 Danger Noodle Version
   - Added Settings.sh File to Quickly Change Django Project Name
 - v0.0.1 Inital Versions
