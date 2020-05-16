@@ -56,7 +56,7 @@ Update docker-compose.yml file.
       POSTGRES_PASSWORD: YOUR_PASSWORD
 ...
 ```
-
+Update core/settings.py file.
 ``` python
 DATABASES = {
     'default': {
