@@ -37,7 +37,7 @@ docker-compose up
 ```
 
 ## (Optional) Step 3: Integrate Django Channels & Redis
-[Follow Django Channels Setup Documentation](https://channels.readthedocs.io/en/latest/tutorial/part_1.html) Remember your django project directory is located in /core.
+[Follow Django Channels Setup Documentation](https://channels.readthedocs.io/en/latest/tutorial/part_1.html). Remember your django project directory is located in /core.
 
 ## (Opinional) Step 4: Rename Project
 - Rename directory /djangoized directory to your project name.
